@@ -1,2 +1,7 @@
 @import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/brakepoint';
+@import './utils/mixin';
+@import './utils/placeholders';
+@import './base/extras';
+@import './base/body';

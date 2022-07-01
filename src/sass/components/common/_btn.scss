@@ -1,0 +1,18 @@
+.btn {
+  padding: 11px 22px;
+  border-radius: 20px;
+  &-primary {
+    background: $btn-primary;
+    &:hover,
+    &:focus {
+        background: $font-secondary;
+    }
+  }
+  &-secondary {
+    background: $font-main;
+    &:hover,
+    &:focus {
+        background: $hover;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 body {
-	font-family: $fontPrimary, $fontSecondary;
-	color: var(--font-main);
-	margin: 0;
-	background-color: $font-secondary;
+  font-family: $fontPrimary, $fontSecondary;
+  color: $font-main-dark;
+  margin: 0;
 }
 body.lock {
-	overflow: hidden;
+  overflow: hidden;
 }
