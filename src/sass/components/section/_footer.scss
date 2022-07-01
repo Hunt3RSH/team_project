@@ -1,0 +1,102 @@
+.mine-footer {
+  background-color: #fff5f6;
+}
+
+.alignment {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 67px;
+}
+
+.mine-footer__text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.mine-footer__text-color {
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  color: #d41443;
+
+  margin-top: 16px;
+}
+
+.mine-footer__wrapper-right {
+  display: block;
+  margin-left: auto;
+}
+
+.social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.social-networks__network {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 30px;
+  background-color: #fea5bb;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.social-networks__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.social-networks__icon {
+  fill: #fff;
+}
+
+.addres__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.02em;
+  color: #d41443;
+}
+
+.addres_text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.mine-footer__year {
+  text-align: center;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.88;
+  letter-spacing: 0.02em;
+  color: #907e82;
+
+  border-top: 1px solid #e1e1e1;
+}
