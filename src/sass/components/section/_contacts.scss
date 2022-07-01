@@ -1,0 +1,132 @@
+.contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.contacts-item {
+  background: $white;
+  padding: 40px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  flex-basis: calc(((100% - (3 - 1) * 32px)) / 3);
+}
+
+.contacts-label {
+  display: inline-block;
+  margin-bottom: 32px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $font-main;
+
+  .contacts-item:nth-child(odd) & {
+    background-color: #f0d1a5;
+  }
+  .contacts-item:nth-child(even) & {
+    background-color: #c2e297;
+  }
+}
+
+.contacts-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $font-main-dark;
+}
+
+.contacts-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: $font-main-light;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.contacts-schedule {
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+.schedule-days {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $font-main-dark;
+}
+
+.schedule-times {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  color: $font-secondary-light;
+}
+
+.contacts-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.83;
+  color: $font-main-light;
+
+  &:hover,
+  &:focus {
+    color: $font-secondary;
+  }
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contacts-btn {
+  display: inline-block;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  //   display: flex;
+  //   align-items: center;
+  //   text-align: center;
+  &.btn-primary {
+    color: $font-main;
+  }
+  &.btn-secondary {
+    color: font-secondary;
+  }
+}
+
+.contacts-icon {
+  margin-left: 21px;
+  stroke: currentColor;
+  fill: currentColor;
+}
