@@ -1,18 +1,23 @@
 .btn {
   padding: 11px 22px;
   border-radius: 20px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
   &-primary {
     background: $btn-primary;
+    color: $font-main;
     &:hover,
     &:focus {
-        background: $font-secondary;
+      background: $font-secondary;
     }
   }
   &-secondary {
     background: $font-main;
+    color: $font-secondary;
     &:hover,
     &:focus {
-        background: $hover;
+      background: $hover;
     }
   }
 }
