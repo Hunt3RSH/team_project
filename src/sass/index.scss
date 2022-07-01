@@ -5,3 +5,15 @@
 @import './utils/placeholders';
 @import './base/extras';
 @import './base/body';
+
+// header
+@import './components/header/header';
+@import './components/section/hero';
+// main 
+@import './components/section/products';
+@import './components/section/about';
+@import './components/section/advantages';
+@import './components/section/gallery';
+@import './components/section/reviews';
+@import './components/section/contacts';
+@import './components/section/footer';
