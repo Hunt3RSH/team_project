@@ -1,0 +1,78 @@
+.advantages {
+  background-color: $background-light;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.advantages_category {
+  display: flex;
+  background-image: url(/src/images/advantages/sectionbg1\ 1.png);
+}
+
+.advantages_first {
+  margin-right: 99px;
+}
+
+.advantages_description {
+  display: block;
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $font-main-dark;
+  margin-bottom: 32px;
+
+  letter-spacing: 0.04em;
+}
+
+.advantages_second {
+  margin-top: 90px;
+}
+
+.advantages_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+
+  color: $font-main-light;
+  margin-bottom: 40px;
+}
+
+.advantages_button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31px;
+
+  align-items: center;
+  text-align: center;
+  color: $btn-primary;
+  width: 176px;
+  height: 44px;
+
+  //   padding: 11px 22px;
+  border-radius: 22px;
+  background: $font-main;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: $hover;
+
+    // &::after {};
+  }
+}
+
+.statistic {
+  background-color: $background-light;
+}
+
+.statistic_list {
+  display: flex;
+}
+// .statistic_list:not(:first-child) {
+//   margin-left: 80px;
+// }
