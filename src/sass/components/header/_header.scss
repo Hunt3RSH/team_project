@@ -2,6 +2,11 @@
   position: relative;
   z-index: 20;
 }
+.btn-buy {
+  @media screen and (max-width: $max-brp-768) {
+    display: none;
+  }
+}
 .header-wrapper {
   position: absolute;
   left: 0;
@@ -10,6 +15,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .main-menu {
+    @media screen and (max-width: $max-brp-1200) {
+      display: none;
+    }
+  }
 }
 .nav-list {
   display: flex;
