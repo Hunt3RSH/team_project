@@ -3,6 +3,8 @@
   z-index: 20;
 }
 .btn-buy {
+  padding-left: 37px;
+  padding-right: 37px;
   @media screen and (max-width: $max-brp-768) {
     display: none;
   }
@@ -10,7 +12,7 @@
 .header-wrapper {
   position: absolute;
   left: 0;
-  top: 37px;
+  // top: 37px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -20,16 +22,28 @@
       display: none;
     }
   }
+  @include mq(mob-only) {
+    top: 8px;
+  }
+  @include mq(tab-only) {
+    top: 32px;
+    padding: 0 17px 0 17px;
+  }
+  @include mq(desc) {
+    top: 37px;
+  }
 }
 .nav-list {
   display: flex;
   gap: 35px;
 }
 .nav-list__link {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.32;
   color: $font-main;
+  padding: 12px 0;
   &:hover,
   &:focus {
     color: $font-secondary;
