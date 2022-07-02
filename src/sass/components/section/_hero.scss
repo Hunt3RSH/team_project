@@ -3,8 +3,6 @@
   background-color: $background-color;
   padding-top: 167px;
 }
-.hero {
-}
 .hero-title {
   display: block;
   margin-bottom: 24px;
@@ -58,7 +56,8 @@
   color: $font-main;
 }
 .hero-subtitle__link {
-  display: inline-block;
+  width: 26px;
+  height: 26px;
   margin-top: 20px;
 }
 .hero-wrapper {
