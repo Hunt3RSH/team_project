@@ -1,0 +1,126 @@
+.hero-bg {
+  display: flex;
+  background-color: $background-color;
+  padding-top: 167px;
+}
+.hero-title {
+  display: block;
+  margin-bottom: 24px;
+  width: 277px;
+  font-family: $fontSecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $font-main;
+  span {
+    font-size: 58px;
+    line-height: 90.5%;
+    color: $font-secondary;
+  }
+}
+.hero-links {
+  display: flex;
+  gap: 12px;
+  .btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+.hero-subtitle {
+  position: relative;
+  display: flex;
+  margin-top: 108px;
+  margin-bottom: 84px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 229px;
+  }
+}
+.hero-bio {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+}
+.hero-subtitle__text {
+  width: 200px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $font-main;
+}
+.hero-subtitle__link {
+  width: 26px;
+  height: 26px;
+  margin-top: 20px;
+}
+.hero-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.hero-ellipse {
+  position: absolute;
+  bottom: 76px;
+  left: 0;
+  z-index: 0;
+}
+.hero-icecream {
+  position: absolute;
+  bottom: 0;
+  left: 119px;
+}
+.count {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+.count-nomber {
+  position: relative;
+  font-family: $fontSecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.15;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $font-secondary;
+  z-index: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -15%;
+    right: -15%;
+    background-color: $white;
+    z-index: -1;
+  }
+}
+.count-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $font-main;
+}
+.hero-tasty {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
