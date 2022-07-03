@@ -33,9 +33,24 @@
     <!-- footer -->
     <include src="./partials/footer.html"></include>
   </body>
-  <script
-    type="module"
-    src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
-  ></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
   <script type="module" src="/src/js/mobile-menu.js"></script>
 </html>

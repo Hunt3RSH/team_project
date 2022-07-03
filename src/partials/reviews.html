@@ -1,31 +1,47 @@
 <section class="section">
-    <div class="container">
-        <ul>
-            <li>
-              <source
-                srcset="
-                  ./images/hero/slider-pic5.png          1x,
-                  ./images/hero/retina/x2slider-pic5.png 2x
-                "
-                media="(min-width: 1200px)"
-              />
-              <img
-                class=""
-                src="/src/images/hero/slider-pic5.png"
-                alt="Bio_Eco_milk"
-              />
-            </picture>
-              <p>
-                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-                sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
-                in nibh vel risus.
-              </p>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-    </div>
+  <div class="container">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/testimonials1.png 1x,
+                ./images/reviews/testimonials1.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <img
+              width="85"
+              src="/src/images/reviews/testimonials1.png"
+              alt="reviews"
+            />
+          </picture>
+          <div>
+            <p class="reviews-comment">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+              ipsum primis in nibh vel risus.
+            </p>
+            <svg width="32" height="4">
+              <use href="./images/svg-sprite/symbol.svg#icon-Group-8-1"></use>
+            </svg>
+            <span>Emily, Los Angeles</span>
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
 </section>
