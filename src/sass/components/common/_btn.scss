@@ -4,12 +4,14 @@
   display: inline-block;
   border: none;
   cursor: pointer;
+  @extend %animation;
+  transition-property: background;
   &-primary {
     background: $btn-primary;
     color: $font-main;
     &:hover,
     &:focus {
-      background: $font-secondary;
+      background: $background-mobile;
     }
   }
   &-secondary {

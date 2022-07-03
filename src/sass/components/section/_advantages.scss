@@ -1,0 +1,168 @@
+.about {
+  background-color: $background-light;
+}
+.about-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .section-subtitle {
+//   margin-bottom: 16px;
+// }
+
+// .section-title {
+//   margin-bottom: 60px;
+// }
+
+.about_category {
+  display: flex;
+  background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
+  margin-inline: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
+  }
+}
+
+.about_first {
+  margin-right: 99px;
+}
+
+.about_description {
+  display: block;
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  color: $font-main-dark;
+  margin-bottom: 32px;
+  max-width: 463px;
+
+  letter-spacing: 0.04em;
+}
+
+.about_second {
+  margin-top: 90px;
+}
+
+.about_text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.92;
+  letter-spacing: 0.04em;
+
+  color: $font-main-light;
+  margin-bottom: 40px;
+  max-width: 463px;
+}
+
+.about_button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31px;
+
+  align-items: center;
+  text-align: center;
+  color: $btn-primary;
+  width: 176px;
+  height: 44px;
+
+  //   padding: 11px 22px;
+  border-radius: 22px;
+  background: $font-main;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: $hover;
+  }
+}
+
+.btn-icon-right {
+  margin-left: 13.6px;
+}
+
+.advantages {
+  background-color: $background-light;
+}
+
+.advantages_list {
+  display: flex;
+}
+// .statistic_list:not(:first-child) {
+//   margin-left: 80px;
+// }
+
+.advantages_text:not(:first-child) {
+  margin-right: 115px;
+}
+
+.advantages_item::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.bucket-icon::before {
+  background-image: url(/src/images/advantages/png-advantages/bucket.png);
+}
+
+// background-image: url(/src/images/advantages/png-advantages/bucket.png);
+
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .bucket-icon::before {
+//     background-image: url(/src/images/advantages/png-advantages/bucket@2x.png);
+//   }
+// }
+
+.apple-icon::before {
+  background-image: url(/src/images/advantages/png-advantages/apples-icon.png);
+}
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .apple-icon::before {
+//     background-image: url(/src/images/advantages/png-advantages/apples-icon@2x.png);
+//   }
+// }
+
+.ice-icon::before {
+  background-image: url(/src/images/advantages/png-advantages/ice-cream.png);
+}
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .ice-icon::before {
+//     background-image: url(/src/images/advantages/png-advantages/ice-cream@2x.png);
+//   }
+// }
+
+.advantages_number {
+  font-family: $fontSecondary;
+  color: $font-secondary;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
