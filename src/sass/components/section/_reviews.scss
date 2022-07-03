@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   div {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,7 @@
   }
 }
 .reviews-comment {
+  width: 822px;
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
@@ -31,6 +32,8 @@
   letter-spacing: 0.04em;
   color: $font-main-dark;
   margin-bottom: 16px;
+  padding: 32px 72px;
+  background-color: $bg-review;
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
