@@ -1,40 +1,68 @@
 .contacts {
   background-image: linear-gradient(
-    to bottom,
     $white 25%,
     $background-light 25%,
     $background-light 100%
   );
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(mob-only) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 .contacts-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
+  @include mq(tab) {
+    margin-bottom: 60px;
+    gap: 32px;
+  }
 }
 
 .contacts-item {
   background: $white;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  flex-basis: calc(((100% - (3 - 1) * 32px)) / 3);
+
+  & + & {
+    @include mq(mob-only) {
+      margin-top: 20px;
+    }
+  }
+
+  @include mq(tab) {
+    flex-basis: calc(((100% - (3 - 1) * 32px)) / 3);
+  }
+  @include mq(desc) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .contacts-label {
   display: inline-block;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   padding-left: 17px;
   padding-right: 17px;
   border-radius: 6px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.86;
   text-align: center;
   letter-spacing: 0.04em;
-
   color: $font-main;
-
+  @include mq(tab) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
   .contacts-item:nth-child(odd) & {
     background-color: #f0d1a5;
   }
@@ -46,27 +74,44 @@
 .contacts-title {
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 12px;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $font-main-dark;
+  @include mq(tab) {
+    font-size: 14px;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
 }
 
 .contacts-text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.83;
+  font-size: 12px;
+  line-height: 1.86;
   letter-spacing: 0.04em;
   color: $font-main-light;
+  @include mq(tab) {
+    font-size: 14px;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
 
   &::after {
     content: '';
     display: block;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     height: 1px;
     width: 100%;
     border-bottom: 1px solid #e1e1e1;
+    @include mq(tab) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -74,35 +119,58 @@
   &::after {
     content: '';
     display: block;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     height: 1px;
     width: 100%;
     border-bottom: 1px solid #e1e1e1;
+    @include mq(tab) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 }
 .schedule-days {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $font-main-dark;
+  @include mq(tab) {
+    font-size: 14px;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
 }
 
 .schedule-times {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.86;
   color: $font-secondary-light;
+  @include mq(tab) {
+    font-size: 14px;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
 }
 
 .contacts-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.83;
+  font-size: 12px;
+  line-height: 1.5;
   color: $font-main-light;
+  @include mq(tab) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
 
   &:hover,
   &:focus {
@@ -113,6 +181,7 @@
 .btn-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -128,7 +197,7 @@
     color: $font-main;
     &:hover,
     &:focus {
-      background-color: #f77895;
+      background-color: $background-mobile;
     }
   }
   &.btn-secondary {
