@@ -1,1 +1,70 @@
-<nav>Logo</nav>
+<header class="container">
+  <div class="header-top">
+    <div class="header-wrapper">
+      <a href="index.html">
+        <img src="/src/images/logo.svg" alt="logo" />
+      </a>
+      <nav class="main-menu">
+        <ul class="nav-list">
+          <li><a class="nav-list__link current" href="#">Home</a></li>
+          <li><a class="nav-list__link" href="#">About us</a></li>
+          <li><a class="nav-list__link" href="#">How it’s made?</a></li>
+          <li><a class="nav-list__link" href="#">Our products</a></li>
+          <li><a class="nav-list__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-btn">
+        <!-- buy btn -->
+        <button class="btn btn-secondary btn-buy">
+          <span class="btn-text"
+            >Buy now<svg width="4" height="8">
+              <use
+                href="/src/images/svg-sprite/symbol.svg#icon-arrow_btn"
+              ></use>
+            </svg>
+          </span>
+        </button>
+        <!-- mobile menu btn -->
+        <button
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-open-menu
+        >
+          <span class="line line-top"></span>
+          <span class="line line-middle"></span>
+          <span class="line line-bottom"></span>
+        </button>
+        <div class="modal is-hidden" data-backdrop>
+          <div class="modal-window">
+            <button class="btn-close" data-close-menu>
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+            </button>
+            <div class="menu" id="menu" data-open-menu>
+              <button class="btn btn-secondary btn-buy__mobile">
+                <span class="btn-text"
+                  >Buy now<svg width="4" height="8">
+                    <use
+                      href="/src/images/svg-sprite/symbol.svg#icon-arrow_btn"
+                    ></use>
+                  </svg>
+                </span>
+              </button>
+              <nav class="menu-mobile">
+                <ul class="menu-nav">
+                  <li><a class="menu-text current" href="#">Home</a></li>
+                  <li><a class="menu-text" href="#">About us</a></li>
+                  <li><a class="menu-text" href="#">How it’s made?</a></li>
+                  <li><a class="menu-text" href="#">Our products</a></li>
+                  <li><a class="menu-text" href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
