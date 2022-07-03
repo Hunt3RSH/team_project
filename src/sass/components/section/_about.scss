@@ -7,8 +7,8 @@
   margin-inline: auto;
 
   @include mq(tab) {
-    padding-left: 32px;
     padding-right: 34px;
+    padding-left: 32px;
   }
   @include mq(desc) {
     padding-left: 16px;
@@ -132,7 +132,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
-
+  margin-bottom: 40px;
   @include mq(tab-only) {
     font-size: 14px;
     line-height: 1.79;
