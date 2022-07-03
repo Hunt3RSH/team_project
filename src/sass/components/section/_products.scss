@@ -1,13 +1,40 @@
 .products {
+  @include mq(mob-only) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  @include mq(tab-only) {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
   //   $card-gap: 32px;
   //   $card-item: 3;
 }
 
 .products-subtitle {
+  @include mq(mob-only) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  @include mq(tab-only) {
+    font-size: 26px;
+    line-height: 1.17;
+  }
   font-family: $fontSecondary;
 }
 
 .products-header {
+  @include mq(mob-only) {
+    margin-bottom: 148px;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+  }
+  @include mq(tab-only) {
+    margin-bottom: 158px;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+  }
   font-family: $fontSecondary;
   margin-bottom: 281px;
 }
@@ -15,54 +42,121 @@
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  // gap: 140px;
+  @include mq(tab) {
+    gap: 16px;
+  }
+  @include mq(desc) {
+    gap: 32px;
+  }
 }
 .products-item {
   position: relative;
-  flex-basis: calc((100% - ((3 - 1) * 32px)) / 3);
+  width: 100%;
+  padding: 160px 53px 40px;
+  // flex-basis: calc((100% - ((1 - 1) * 140px)) / 1);
+  @include mq(tab) {
+    flex-basis: calc((100% - ((3 - 1) * 16px)) / 3);
+    padding: 118px 32px 40px;
+  }
+  @include mq(desc) {
+    flex-basis: calc((100% - ((3 - 1) * 32px)) / 3);
+    padding: 165px 62px 60px;
+  }
   border-radius: 24px;
-  padding: 165px 62px 60px;
+
+  & + & {
+    @include mq(mob-only) {
+      margin-top: 140px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 280px;
+    top: -140px;
+    left: 0;
+    margin-bottom: 32px;
+    @include mq(tab) {
+      top: -138px;
+      height: 224px;
+    }
+    @include mq(desc) {
+      height: 394px;
+      top: -261px;
+    }
+  }
 
   &:nth-child(1)::before {
     content: '';
-    background-image: url(../images/products-img1.png);
-    //     @include retina {
-    //     background-image: url(../images/products-img1-2x.png);
-    //   }
-    position: absolute;
-    width: 100%;
-    height: 394px;
-    top: -261px;
-    left: 0;
-    margin-bottom: 32px;
+    background-image: url(../images/products/products-img1-mob.png);
+    @include mq(retina) {
+      background-image: url(../images/products/products-img1-mob-2x.png);
+    }
+
+    @include mq(tab) {
+      background-image: url(../images/products/products-img1-tab.png);
+
+      @include mq(retina) {
+        background-image: url(../images/products/products-img1-tab-2x.png);
+      }
+    }
+
+    @include mq(desc) {
+      background-image: url(../images/products/products-img1-desk.png);
+
+      @include mq(retina) {
+        background-image: url(../images/products/products-img1-desk-2x.png);
+      }
+    }
   }
 
   &:nth-child(2)::before {
     content: '';
-    background-image: url(../images/products-img2.png);
-    //     @include retina {
-    //     background-image: url(../images/products-img2-2x.png);
-    //   }
-    position: absolute;
-    width: 100%;
-    height: 394px;
-    top: -261px;
-    left: 0;
-    margin-bottom: 32px;
+    background-image: url(../images/products/products-img2-mob.png);
+    @include mq(retina) {
+      background-image: url(../images/products/products-img2-mob-2x.png);
+    }
+
+    @include mq(tab) {
+      background-image: url(../images/products/products-img2-tab.png);
+      @include mq(retina) {
+        background-image: url(../images/products/products-img2-tab-2x.png);
+      }
+    }
+
+    @include mq(desc) {
+      background-image: url(../images/products/products-img2-desk.png);
+      @include mq(retina) {
+        background-image: url(../images/products/products-img2-desk-2x.png);
+      }
+    }
   }
 
   &:nth-child(3)::before {
     content: '';
-    background-image: url(../images/products-img3.png);
-    //     @include retina {
-    //     background-image: url(../images/products-img3-2x.png);
-    //   }
-    position: absolute;
-    width: 100%;
-    height: 394px;
-    top: -261px;
-    left: 0;
-    margin-bottom: 32px;
+    background-image: url(../images/products/products-img3-mob.png);
+    @include mq(retina) {
+      background-image: url(../images/products/products-img3-mob-2x.png);
+    }
+
+    @include mq(tab) {
+      background-image: url(../images/products/products-img3-tab.png);
+      @include mq(retina) {
+        background-image: url(../images/products/products-img3-tab-2x.png);
+      }
+    }
+
+    @include mq(desc) {
+      background-image: url(../images/products/products-img3-desk.png);
+      @include mq(retina) {
+        background-image: url(../images/products/products-img3-desk-2x.png);
+      }
+    }
   }
 }
 .products-item:nth-child(1) {
@@ -79,25 +173,34 @@
   margin-bottom: 32px;
   font-family: $fontSecondary;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $font-main;
+  @include mq(desc) {
+    font-size: 30px;
+  }
 }
 
 .products-text {
   margin-bottom: 60px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.76;
+  font-size: 14px;
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
   color: $font-main;
+  @include mq(tab) {
+    ine-height: 1.76;
+  }
+  @include mq(desc) {
+    font-size: 16px;
+  }
   &::before {
     content: '';
-    background-image: url(../images/products-svg.svg);
+    background-image: url(../images/products/products-svg.svg);
 
     width: 24px;
     height: 6px;
