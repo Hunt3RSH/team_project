@@ -1,0 +1,51 @@
+.swiper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  picture {
+    margin-bottom: 16px;
+  }
+  svg {
+    margin-bottom: 16px;
+  }
+  span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+    margin-bottom: 32px;
+    color: $font-main-dark;
+  }
+}
+.reviews-comment {
+  width: 968px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $font-main-dark;
+  margin-bottom: 16px;
+  padding: 32px 72px;
+  background-color: $bg-review;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
