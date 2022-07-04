@@ -1,4 +1,4 @@
-.modal {
+.menu-backdrop {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -14,17 +14,17 @@
   transition-property: opacity, visibility;
   @extend %animation;
 }
-.modal.is-hidden {
+.menu-backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 .is-hidden {
-  .modal-window {
+  .menu-backdrop__window {
     transform: translateX(300%);
   }
 }
-.modal-window {
+.menu-backdrop__window {
   position: relative;
   z-index: 10;
   transform: translateX(0);

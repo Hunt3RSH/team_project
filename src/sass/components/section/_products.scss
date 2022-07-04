@@ -1,14 +1,5 @@
 .products {
-  @include mq(mob-only) {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  @include mq(tab-only) {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-  //   $card-gap: 32px;
-  //   $card-item: 3;
+  overflow: hidden;
 }
 
 .products-subtitle {
@@ -42,7 +33,7 @@
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  // gap: 140px;
+  align-items: flex-start;
   @include mq(tab) {
     gap: 16px;
   }
@@ -54,7 +45,6 @@
   position: relative;
   width: 100%;
   padding: 160px 53px 40px;
-  // flex-basis: calc((100% - ((1 - 1) * 140px)) / 1);
   @include mq(tab) {
     flex-basis: calc((100% - ((3 - 1) * 16px)) / 3);
     padding: 118px 32px 40px;
@@ -209,13 +199,25 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  &.is-hidden {
+    display: none;
+  }
 }
 
 .products-button {
+  cursor: pointer;
   display: block;
   margin-right: auto;
   margin-left: auto;
 
   border: transparent;
   background-color: transparent;
+  &.text-open {
+    transform: rotate(-90deg);
+  }
 }
+
+// анімація li 1 data-aos="fade-right"
+// l2 data-aos="fade-up"
+// l3 data-aos="fade-left"

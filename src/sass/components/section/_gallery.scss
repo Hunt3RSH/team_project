@@ -1,10 +1,26 @@
 .gallery {
-  background-image: linear-gradient(
-    to bottom,
-    $background-light 25%,
-    $background-light 25%,
-    $white 26%
-  );
+  overflow: hidden;
+  @include mq(noDesc) {
+    background-image: linear-gradient(
+      to bottom,
+      $background-light 15%,
+      $background-light 15%,
+      $white 16%
+    );
+  }
+
+  @include mq(desc) {
+    background-image: linear-gradient(
+      to bottom,
+      $background-light 25%,
+      $background-light 25%,
+      $white 26%
+    );
+  }
+
+  @include mq(noDesc) {
+    padding-top: 0;
+  }
 }
 
 .gallery__list {
@@ -20,9 +36,10 @@
     gap: 8px;
   }
 }
+
 .gallery__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 
   cursor: pointer;

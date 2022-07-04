@@ -16,7 +16,7 @@
   }
 }
 
-.about-subtitle {
+.about__subtitle {
   font-family: $fontSecondary;
   color: $font-subtitle;
   font-weight: 400;
@@ -39,7 +39,7 @@
   }
 }
 
-.about-title {
+.about__title {
   font-family: $fontSecondary;
   font-weight: 400;
   font-size: 34px;
@@ -64,11 +64,11 @@
   }
 }
 
-.about_category {
+.about__category {
   background-color: $background-light;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0% 78%;
+  background-position: 0% 72%;
   background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
   @include mq(mob) {
     // background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
@@ -88,6 +88,7 @@
   }
   @include mq(desc) {
     display: flex;
+    background-position: 0% 10%;
     background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
 
     @include mq(retina) {
@@ -96,7 +97,7 @@
   }
 }
 
-.about_cow {
+.about__cow {
   margin-bottom: 40px;
   @include mq(tab-only) {
     margin-bottom: 0px;
@@ -107,7 +108,7 @@
   }
 }
 
-.about_second {
+.about__second {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -117,7 +118,7 @@
     font-size: 14px;
     line-height: 1.78;
     padding-right: 0px;
-    margin-top: 40px;
+    // margin-top: 40px;
   }
 
   @include mq(desc) {
@@ -125,7 +126,7 @@
   }
 }
 
-.about_description {
+.about__description {
   font-family: $fontPrimary;
   font-style: normal;
   color: $font-main-dark;
@@ -133,6 +134,7 @@
   font-size: 12px;
   line-height: 1.58;
   margin-bottom: 40px;
+  max-width: 220px;
   @include mq(tab-only) {
     font-size: 14px;
     line-height: 1.79;
@@ -149,13 +151,14 @@
   }
 }
 
-.about_text {
+.about__text {
   color: $font-main-light;
   font-family: $fontPrimary;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
   margin-bottom: 20px;
+  max-width: 220px;
   @include mq(tab-only) {
     font-size: 14px;
     line-height: 1.79;
@@ -172,7 +175,7 @@
   }
 }
 
-.about_button {
+.about__button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -181,6 +184,10 @@
   text-align: center;
   width: 176px;
   height: 44px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: $btn-primary;
   padding-left: 37px;
