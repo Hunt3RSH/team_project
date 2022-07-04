@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.querySelector("[data-open-menu]"),closeModalBtn:document.querySelector("[data-close-menu]"),backdrop:document.querySelector("[data-backdrop]")};function o(){document.body.classList.toggle("lock"),e.backdrop.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o),e.backdrop.addEventListener("click",logBackdropClick)})();
+//# sourceMappingURL=index.fba72d33.js.map
