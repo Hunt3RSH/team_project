@@ -44,6 +44,9 @@
   line-height: 1.32;
   color: $font-main;
   padding: 12px 0;
+
+  transition-property: color;
+  @extend %animation;
   &:hover,
   &:focus {
     color: $font-secondary;

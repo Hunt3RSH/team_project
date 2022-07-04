@@ -5,6 +5,13 @@
   position: relative;
   background-color: $background-color;
   z-index: 0;
+  overflow: hidden;
+}
+.hero {
+  @include mq(mob-only) {
+    padding-bottom: 150px;
+    padding-top: 194px;
+  }
 }
 .hero-title {
   display: block;
@@ -26,7 +33,6 @@
     }
   }
   @include mq(mob-only) {
-    margin-top: 194px;
     margin-bottom: 20px;
     font-size: 26px;
     width: 218px;
@@ -54,9 +60,6 @@
     @include mq(tab-only) {
       font-size: 8px;
     }
-  }
-  @include mq(mob-only) {
-    margin-bottom: 150px;
   }
 }
 .hero-subtitle {
@@ -136,7 +139,7 @@
 }
 .hero-wrapper {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @include mq(tab-only) {
     display: flex;
     justify-content: space-between;
