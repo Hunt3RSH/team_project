@@ -1,16 +1,16 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector(
+    openLocationBtn: document.querySelector(
       '[data-contacts-locations-modal-open]'
     ),
-    closeModalBtn: document.querySelector(
+    closeLocationBtn: document.querySelector(
       '[data-contacts-locations-modal-close]'
     ),
     modal: document.querySelector('[data-contacts-locations-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openLocationBtn.addEventListener('click', toggleModal);
+  refs.closeLocationBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
