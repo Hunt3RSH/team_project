@@ -20,11 +20,17 @@
     margin-bottom: 16px;
   }
   span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
     margin-bottom: 32px;
+    color: $font-main-dark;
   }
 }
 .reviews-comment {
-  width: 822px;
+  width: 968px;
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
