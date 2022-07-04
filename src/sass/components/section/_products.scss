@@ -1,14 +1,4 @@
 .products {
-  @include mq(mob-only) {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  @include mq(tab-only) {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-  //   $card-gap: 32px;
-  //   $card-item: 3;
 }
 
 .products-subtitle {
@@ -42,7 +32,6 @@
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  // gap: 140px;
   @include mq(tab) {
     gap: 16px;
   }
@@ -54,7 +43,6 @@
   position: relative;
   width: 100%;
   padding: 160px 53px 40px;
-  // flex-basis: calc((100% - ((1 - 1) * 140px)) / 1);
   @include mq(tab) {
     flex-basis: calc((100% - ((3 - 1) * 16px)) / 3);
     padding: 118px 32px 40px;
