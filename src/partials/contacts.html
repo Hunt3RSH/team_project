@@ -153,18 +153,66 @@
 <!--_________________ Modal-Franchisa_______________ -->
 
 <div
-  class="contacts-franchisa-backdrop is-hidden"
+  class="contacts-franchise-backdrop is-hidden"
   data-contacts-franchise-modal
 >
-  <div class="contacts-franchisa-modal">
+  <div class="contacts-franchise-modal">
     <button
-      class="contacts-franchisa-modal-btn"
+      class="contacts-franchise-modal-btn"
       type="button"
       data-contacts-franchise-modal-close
     >
-      <svg class="contacts-franchisa-modal-icon" width="18" height="18">
+      <svg class="contacts-franchise-modal-icon" width="18" height="18">
         <use href="./images/contacts-icons.svg#contacts-icon-close"></use>
       </svg>
     </button>
+    <p class="franchise-title">Leave your detalies, we will call you back</p>
+    <form class="franchise-form" name="modal-form" autocomplete="on" novalidate>
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="username">Name</label>
+        <input
+          class="franchise-form-input"
+          type="text"
+          name="username"
+          required
+          id="username"
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="phone-number">Phone</label>
+        <input
+          class="franchise-form-input"
+          type="tel"
+          name="phone-number"
+          required
+          id="phone-number"
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="email">E-mail</label>
+        <input
+          class="franchise-form-input"
+          type="email"
+          name="email"
+          id="email"
+        />
+      </div>
+
+      <div class="franchise-form-comment">
+        <label class="franchise-form-label" for="comment">Comment</label>
+        <textarea
+          class="franchise-form-textarea"
+          name="comment"
+          placeholder="Enter text"
+          id="comment"
+        ></textarea>
+      </div>
+
+      <button class="franchise-form-button btn btn-primary" type="submit">
+        Send
+      </button>
+    </form>
   </div>
 </div>
