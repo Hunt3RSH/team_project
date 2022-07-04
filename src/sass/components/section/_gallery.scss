@@ -1,4 +1,5 @@
 .gallery {
+  overflow: hidden;
   @include mq(noDesc) {
     background-image: linear-gradient(
       to bottom,
