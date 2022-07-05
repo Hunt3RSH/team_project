@@ -175,13 +175,13 @@
 }
 
 .products-text {
-  margin-bottom: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
   color: $font-main;
+
   @include mq(tab) {
     ine-height: 1.76;
   }
@@ -191,7 +191,7 @@
   &::before {
     content: '';
     background-image: url(../images/products/products-svg.svg);
-
+    margin-top: 32px;
     width: 24px;
     height: 6px;
     margin-bottom: 32px;
@@ -199,13 +199,24 @@
     margin-right: auto;
     margin-left: auto;
   }
+  &.text-hidden {
+    height: 150px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   &.is-hidden {
-    display: none;
+    height: 1px;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
 .products-button {
+  @include mq(desc) {
+    margin-top: 60px;
+  }
   cursor: pointer;
   display: block;
   margin-right: auto;
@@ -213,8 +224,14 @@
 
   border: transparent;
   background-color: transparent;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &.text-open {
+    margin-top: 32px;
     transform: rotate(-90deg);
+    @include mq(desc) {
+      margin-top: 60px;
+    }
   }
 }
 
