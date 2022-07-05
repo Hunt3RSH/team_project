@@ -36,19 +36,6 @@
   transition-property: transform;
   filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
   @extend %animation;
-
-  //   @media screen and (max-width: $max-brp-768) {
-  //     padding-left: 20px;
-  //     padding-right: 20px;
-  //   }
-  //   @media screen and (min-width: $min-brp-768) and (max-width: $max-brp-1200) {
-  //     padding-left: 50px;
-  //     padding-right: 50px;
-  //   }
-  //   @media screen and (min-width: $min-brp-1200) {
-  //     padding-left: 90px;
-  //     padding-right: 90px;
-  //   }
 }
 
 .btn-close {
@@ -167,3 +154,5 @@
     border-bottom: 1px solid $border-menu;
   }
 }
+
+//  modal ---------for desc

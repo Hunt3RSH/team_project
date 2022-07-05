@@ -4,8 +4,8 @@ for (let anchor of anchors) {
   if (anchor) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      anchorId = this.getAttribute('href');
-      document.querySelector(anchorId).scrollIntoView({
+      anchor = this.getAttribute('href');
+      document.querySelector(anchor).scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
