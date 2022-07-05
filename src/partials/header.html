@@ -1,5 +1,10 @@
-<header class="container">
+<header id="#top" class="container">
   <div class="header-top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg class="my-btn" width="20" height="20">
+        <use href="/src/images/svg-sprite/symbol.svg#icon-arrow_btn"></use>
+      </svg>
+    </button>
     <div class="header-wrapper">
       <a href="index.html">
         <img src="/src/images/logo.svg" alt="logo" />
@@ -17,6 +22,7 @@
           <li><a class="nav-list__link" href="#contacts">Contact</a></li>
         </ul>
       </nav>
+
       <div class="header-btn">
         <!-- buy btn -->
         <button class="btn btn-secondary btn-buy">
@@ -58,11 +64,17 @@
               </button>
               <nav class="menu-mobile">
                 <ul class="menu-nav">
-                  <li><a class="menu-text current" href="#">Home</a></li>
-                  <li><a class="menu-text" href="#">About us</a></li>
-                  <li><a class="menu-text" href="#">How it’s made?</a></li>
-                  <li><a class="menu-text" href="#">Our products</a></li>
-                  <li><a class="menu-text" href="#">Contact</a></li>
+                  <li>
+                    <a class="menu-text current" href="/src/index.html">Home</a>
+                  </li>
+                  <li><a class="menu-text" href="#about">About us</a></li>
+                  <li>
+                    <a class="menu-text" href="#advantages">How it’s made?</a>
+                  </li>
+                  <li>
+                    <a class="menu-text" href="#products">Our products</a>
+                  </li>
+                  <li><a class="menu-text" href="#contacts">Contact</a></li>
                 </ul>
               </nav>
             </div>
