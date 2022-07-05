@@ -95,7 +95,7 @@
         <button
           type="button"
           class="btn btn-primary contacts-btn"
-          data-contacts-modal-open
+          data-contacts-locations-modal-open
         >
           Our Locations
           <svg class="contacts-icon" width="5" height="8">
@@ -104,7 +104,11 @@
         </button>
       </li>
       <li>
-        <button type="button" class="btn btn-secondary contacts-btn">
+        <button
+          type="button"
+          class="btn btn-secondary contacts-btn"
+          data-contacts-franchise-modal-open
+        >
           Franchise
           <svg class="contacts-icon" width="5" height="8">
             <use href="./images/contacts-icons.svg#contacts-icon"></use>
@@ -116,30 +120,99 @@
 </section>
 
 <!--_________________ Modal-locations_______________ -->
-<!-- <div class="contacts-locations-backdrop is-hidden" data-contacts-modal>
+
+<div
+  class="contacts-locations-backdrop is-hidden"
+  data-contacts-locations-modal
+>
   <div class="contacts-locations-modal">
     <button
       class="contacts-locations-modal-btn"
       type="button"
-      data-contacts-modal-close
+      data-contacts-locations-modal-close
     >
-      <svg
-        class="contacts-locations-modal-icon"
-        width="18"
-        height="18"
-        data-contacts-modal-close
-      >
+      <svg class="contacts-locations-modal-icon" width="18" height="18">
         <use href="./images/contacts-icons.svg#contacts-icon-close"></use>
       </svg>
     </button>
+
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6256064.783232151!2d-88.07909242185085!3d40.15497227958206!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sus!4v1656755686755!5m2!1sru!2sus"
-      width="390"
-      height="300"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+      class="contacts-locations-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478940.75962413935!2d-87.76392975675462!3d41.74903025518657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1656925648713!5m2!1sru!2sua"
+      <!--
+      width="240"
+      height="500"
+      --
+    >
+      style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" ></iframe
+    >
   </div>
-</div> -->
+</div>
+
+<!--_________________ Modal-Franchisa_______________ -->
+
+<div
+  class="contacts-franchise-backdrop is-hidden"
+  data-contacts-franchise-modal
+>
+  <div class="contacts-franchise-modal">
+    <button
+      class="contacts-franchise-modal-btn"
+      type="button"
+      data-contacts-franchise-modal-close
+    >
+      <svg class="contacts-franchise-modal-icon" width="18" height="18">
+        <use href="./images/contacts-icons.svg#contacts-icon-close"></use>
+      </svg>
+    </button>
+    <p class="franchise-title">Leave your detalies, we will call you back</p>
+    <form class="franchise-form" name="modal-form" autocomplete="on" novalidate>
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="username">Name</label>
+        <input
+          class="franchise-form-input"
+          type="text"
+          name="username"
+          required
+          id="username"
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="phone-number">Phone</label>
+        <input
+          class="franchise-form-input"
+          type="tel"
+          name="phone-number"
+          required
+          id="phone-number"
+        />
+      </div>
+
+      <div class="franchise-form-field">
+        <label class="franchise-form-label" for="email">E-mail</label>
+        <input
+          class="franchise-form-input"
+          type="email"
+          name="email"
+          id="email"
+        />
+      </div>
+
+      <div class="franchise-form-comment">
+        <label class="franchise-form-label" for="comment">Comment</label>
+        <textarea
+          class="franchise-form-textarea"
+          name="comment"
+          placeholder="Enter text"
+          id="comment"
+        ></textarea>
+      </div>
+
+      <button class="franchise-form-button btn btn-primary" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
