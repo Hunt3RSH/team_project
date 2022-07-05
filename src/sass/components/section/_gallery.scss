@@ -1,5 +1,4 @@
 .gallery {
-  overflow: hidden;
   @include mq(noDesc) {
     background-image: linear-gradient(
       to bottom,
@@ -27,8 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.52px;
-
+  gap: 1.5px;
   @media screen and (min-width: 768px) {
     gap: 6px;
   }
@@ -36,7 +34,16 @@
     gap: 8px;
   }
 }
-
+.gallery__items {
+  display: flex;
+  flex-direction: column;
+  gap: 2.52px;
+}
+.gallery__wrapper {
+  @include mq(mob-only) {
+    width: 100vw;
+  }
+}
 .gallery__img {
   display: block;
   width: 100%;
@@ -44,13 +51,16 @@
 
   cursor: pointer;
   transition: transform 500ms ease-in-out;
+  img {
+    display: block;
+  }
 }
 
-.gallery__wrappen-1 {
+.gallery-wrapper__top {
   transform: translateY(15px);
 }
 
-.gallery__wrappen-2 {
+.gallery-wrapper__bottom {
   transform: translateY(-15px);
 }
 
