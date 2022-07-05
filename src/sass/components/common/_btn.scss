@@ -23,3 +23,30 @@
     }
   }
 }
+#myBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  padding: 0;
+  right: 10%;
+  z-index: 0;
+  border: none;
+  outline: none;
+  background-color: $font-subtitle;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  @extend %animation;
+  transition-property: background-color;
+  &:hover,
+  &:focus {
+    background-color: $background-color;
+  }
+}
+.my-btn {
+  transform: rotate(-90deg);
+}
