@@ -26,7 +26,7 @@
   }
   @include mq(desc) {
     display: flex;
-    background-position: 0% 72%;
+    background-position: 50% 72%;
     background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
 
     @include mq(retina) {
