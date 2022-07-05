@@ -53,15 +53,18 @@
   transition: transform 500ms ease-in-out;
   img {
     display: block;
+    margin: 0;
   }
 }
 
 .gallery-wrapper__top {
-  transform: translateY(15px);
+  padding-top: 25px;
+  // transform: translateY(15px);
 }
 
 .gallery-wrapper__bottom {
-  transform: translateY(-15px);
+  padding-bottom: 25px;
+  // transform: translateY(-15px);
 }
 
 .gallery__img:hover {
