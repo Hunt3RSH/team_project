@@ -2,6 +2,39 @@
   background-color: $background-light;
 }
 
+.about {
+  background-color: $background-light;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% 74%;
+  background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+  @include mq(mob) {
+    // background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+    @include mq(retina) {
+      background-image: url(/src/images/advantages/png-advantages/milk-mob@2x.png);
+    }
+  }
+  @include mq(tab-only) {
+    display: flex;
+  }
+  // @include mq(desk) {
+  //   background-image: none;
+  //   display: none;
+  // }
+  @include mq(tab-only) {
+    background-image: none;
+  }
+  @include mq(desc) {
+    display: flex;
+    background-position: 0% 72%;
+    background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
+
+    @include mq(retina) {
+      background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
+    }
+  }
+}
+
 .about__container {
   padding-inline: 20px;
   margin-inline: auto;
@@ -65,37 +98,44 @@
 }
 
 .about__category {
-  background-color: $background-light;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0% 72%;
-  background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
-  @include mq(mob) {
-    // background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
-    @include mq(retina) {
-      background-image: url(/src/images/advantages/png-advantages/milk-mob@2x.png);
-    }
-  }
   @include mq(tab-only) {
     display: flex;
-  }
-  // @include mq(desk) {
-  //   background-image: none;
-  //   display: none;
-  // }
-  @include mq(tab-only) {
-    background-image: none;
   }
   @include mq(desc) {
     display: flex;
-    background-position: 0% 10%;
-    background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
-
-    @include mq(retina) {
-      background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
-    }
   }
 }
+//   background-color: $background-light;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: 0% 72%;
+//   background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+//   @include mq(mob) {
+//     // background-image: url(/src/images/advantages/png-advantages/milk-mob.png);
+//     @include mq(retina) {
+//       background-image: url(/src/images/advantages/png-advantages/milk-mob@2x.png);
+//     }
+//   }
+//   @include mq(tab-only) {
+//     display: flex;
+//   }
+//   // @include mq(desk) {
+//   //   background-image: none;
+//   //   display: none;
+//   // }
+//   @include mq(tab-only) {
+//     background-image: none;
+//   }
+//   @include mq(desc) {
+//     display: flex;
+//     background-position: 0% 10%;
+//     background-image: url(/src/images/advantages/png-advantages/milk-desk.png);
+
+//     @include mq(retina) {
+//       background-image: url(/src/images/advantages/png-advantages/milk-desk@2x.png);
+//     }
+//   }
+// }
 
 .about__cow {
   margin-bottom: 40px;
