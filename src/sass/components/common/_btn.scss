@@ -36,8 +36,8 @@
   outline: none;
   background-color: $font-subtitle;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   z-index: 99;
   @extend %animation;
@@ -49,4 +49,5 @@
 }
 .my-btn {
   transform: rotate(-90deg);
+  fill: $font-main;
 }

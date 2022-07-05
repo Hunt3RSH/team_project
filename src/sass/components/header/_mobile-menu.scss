@@ -139,10 +139,10 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.32;
-    padding: 13px 0 13px 0;
-    margin-left: 20px;
+    padding: 13px 20px;
     color: $font-main;
     transition-property: color;
+    width: 100%;
     @extend %animation;
     &:hover,
     &:focus {
