@@ -5,6 +5,13 @@
   position: relative;
   background-color: $background-color;
   z-index: 0;
+  overflow: hidden;
+}
+.hero {
+  @include mq(mob-only) {
+    padding-bottom: 150px;
+    padding-top: 194px;
+  }
 }
 .hero-title {
   display: block;
@@ -26,7 +33,6 @@
     }
   }
   @include mq(mob-only) {
-    margin-top: 194px;
     margin-bottom: 20px;
     font-size: 26px;
     width: 218px;
@@ -54,9 +60,6 @@
     @include mq(tab-only) {
       font-size: 8px;
     }
-  }
-  @include mq(mob-only) {
-    margin-bottom: 150px;
   }
 }
 .hero-subtitle {
@@ -136,7 +139,7 @@
 }
 .hero-wrapper {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @include mq(tab-only) {
     display: flex;
     justify-content: space-between;
@@ -157,22 +160,19 @@
 
   z-index: -1;
   @media screen and (max-width: $max-brp-768) {
-    // transform: translate(20%);
     width: 346px;
     bottom: 20%;
-    margin-left: 20%;
+    left: 20%;
   }
   @media screen and (min-width: $min-brp-768) and (max-width: $max-brp-1200) {
     width: 335px;
     bottom: 40px;
-    // transform: translate(75%);
-    margin-left: 35%;
+    left: 35%;
   }
   @media screen and (min-width: $min-brp-1200) {
     width: auto;
     bottom: 77px;
-    // transform: translate(100%);
-    margin-left: 45%;
+    left: 45%;
   }
 }
 // anime
@@ -185,11 +185,11 @@
 @keyframes shake-ellipse {
   0%,
   100% {
-    transform: translate(0);
+    transform: translateY(80px) translateX(-100px);
     opacity: 1;
   }
   20% {
-    transform: translateY(60px);
+    transform: translateY(40px) translateX(-200px);
     opacity: 0.5;
   }
   40% {
@@ -197,12 +197,12 @@
     opacity: 1;
   }
   60% {
-    transform: translateY(-60px);
+    transform: translateY(-60px) translateX(-60px);
     opacity: 0.3;
   }
   80% {
-    transform: translateX(60px);
-    opacity: 0.4;
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -267,8 +267,7 @@
       width: 30px;
       height: 30px;
     }
-    animation: shake-count 5s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955)
-      both;
+    animation: shake-count 5s infinite cubic-bezier(0.83, 0.6, 0.59, 0.8) both;
   }
   @include mq(tab-only) {
     font-size: 32px;
@@ -278,19 +277,23 @@
   }
 }
 @keyframes shake-count {
-  0%,
-  100% {
-    transform: translate(0);
-    opacity: 1;
+  0% {
+    transform: translateY(0) translateX(0);
   }
   20% {
-    transform: translateY(15px);
+    transform: translateY(5px) translateX(5px);
   }
-  50% {
-    transform: translate(0px);
+  40% {
+    transform: translateY(-5px) translateX(-5px);
+  }
+  60% {
+    transform: translateY(5px) translateX(5px);
   }
   80% {
-    transform: translateX(-15px);
+    transform: translateY(-5px) translateX(-5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
   }
 }
 .count-text {

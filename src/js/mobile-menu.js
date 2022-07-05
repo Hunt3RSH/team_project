@@ -13,4 +13,7 @@
     document.body.classList.toggle('lock');
     refs.backdrop.classList.toggle('is-hidden');
   }
+  function logBackdropClick() {
+    console.log('menu close');
+  }
 })();
